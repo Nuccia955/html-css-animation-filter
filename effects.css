@@ -28,7 +28,7 @@
 
 /* ESERCIZIO 4 */
 .ex-4-square {
-    transition: opacity 1s;
+    transition: opacity 1s ease-in-out;
 }
 
 .ex-4-square:hover {
@@ -77,7 +77,7 @@
 .ex-9-img {
     transition: filter 3s,
                 border-radius 3s,
-                scale 3s;
+                scale 2s ease-in-out;
 }
 
 .ex-9-img:hover {
@@ -158,10 +158,10 @@
 
 /* ESERCIZIO 13 */
 .ex-13-button:hover .ex-13-top-white {
-    animation: move-to-right_t 5s linear infinite;
+    animation: move-to-right_t 3s 1 linear;
 }
 .ex-13-button:hover .ex-13-bottom-white {
-    animation: move-to-right_b 5s linear infinite;
+    animation: move-to-right_b 3s 1 linear;
 }
 @keyframes move-to-right_t {
     0% {
