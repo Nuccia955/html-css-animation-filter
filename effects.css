@@ -73,3 +73,53 @@
     overflow: hidden;
 }
 
+/* ESERCIZIO 9 */
+.ex-9-img {
+    transition: filter 3s,
+                border-radius 3s,
+                scale 3s;
+}
+
+.ex-9-img:hover {
+    filter: sepia(0.7);
+    border-radius: 20px;
+    scale: 1.5;
+}
+
+/* ESERCIZIO 10 */
+.ex-10-icon {
+    transform: rotate(0deg);
+    animation: rotate_l 1s infinite linear;
+}
+
+@keyframes rotate_l {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* ESERCIZIO 11 */
+.ex-11-icon {
+    transform: rotate(0deg)
+}
+.ex-11-icon:hover {
+    transform: rotate(270deg);
+    animation: rotate_r 1s 1 linear forwards;
+}
+
+@keyframes rotate_r {
+    0% {
+        transform: rotate(0deg)
+    }
+    80% {
+        transform: rotate(300deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
